@@ -26,10 +26,10 @@ with middle:
     tframe = st.selectbox("Select timeframe", ['today 5-y', 'today 12-m', 'today 3-m', 'now 7-d', 'all'])
 
 
-# Display the current keywords if it is not empty
-if not df.empty:
-    current_keywords = df.columns.to_list()[1:] if df.columns.to_list()[0] == 'date' else df.columns.to_list()
-    st.text(f'Current Keywords: {current_keywords}')
+# # Display the current keywords if it is not empty
+# if not df.empty:
+#     current_keywords = df.columns.to_list()[1:] if df.columns.to_list()[0] == 'date' else df.columns.to_list()
+#     st.text(f'Current Keywords: {current_keywords}')
 
 # Get the data for the listed Kws
 with right:
